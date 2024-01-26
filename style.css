@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+
+:root {
+    --fonte-geral: 'Dancing Script', cursive;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #fff3cb;
+}
+
+.cabecalho {
+    background-color: #A52A2A;
+    padding: 1.22%;
+    text-align: center;
+    font-size: 1.12rem;
+    font-weight: 400;
+    text-decoration: none;
+
+    
+
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
+.cabecalho__menu__link {
+    color: white;
+    font-weight: 600;
+    font-family: var(--fonte-secundaria)
+    
+
+
+}
+
+.apresentacao__corpo {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    text-align: justify;
+}
+
+.apresentacao__corpo__2 {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    text-align: justify;
+}
+
+.apresentacao__corpo__3 {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    text-align: justify;
+}
+
+.apresentacao__corpo__4 {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    text-align: justify;
+}
+
+.apresentacao__corpo__5 {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    text-align: justify;
+}
+
+
+.apresentacao__corpo__h1 {
+    font-size: 23px;
+    font-weight: 500;
+    font-family: var(--fonte-geral)
+}
+
+
+.apresentacao__corpo__h1__2 {
+    font-size: 23px;
+    font-weight: 500;
+    font-family: var(--fonte-geral);
+
+}
+
+.apresentacao__corpo__h1__3 {
+    font-size: 23px;
+    font-weight: 500;
+    font-family: var(--fonte-geral);
+}
+
+.apresentacao__corpo__h1__4 {
+    font-size: 23px;
+    font-weight: 500;
+    font-family: var(--fonte-geral);
+}
+
+.apresentacao__corpo__h1__5 {
+    font-size: 23px;
+    font-weight: 500;
+    font-family: var(--fonte-geral);
+}
+
+.foto_natal {
+    border-radius: 11%;
+    padding: 25px;
+    width: 500px;
+    height: 600px;
+}
+
+.foto_dbv {
+    border-radius: 11%;
+    padding: 25px;
+    width: 500px;
+    height: 600px;
+}
+
+
+.rodape {
+    color: white;
+    font-weight: 600;   
+    font-family: var(--fonte-secundaria);
+    background-color: #A52A2A;
+    padding: 18px;
+    text-align: center;
+    font-size: 1.12rem;
+    font-weight: 400;
+
+}
