@@ -11,13 +11,18 @@ function updateTimer() {
     if (distance < 0) return; // Caso a data seja no futuro
 
     // Cálculos de tempo
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const totalDays = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const years = Math.floor(totalDays / 365);
+    const days = totalDays % 365;
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Atualizar HTML
     if (document.getElementById("days")) {
+        if (document.getElementById("years")) {
+            document.getElementById("years").innerText = years;
+        }
         document.getElementById("days").innerText = days;
         document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
         document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
