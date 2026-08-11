@@ -1,14 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Galeria de Memórias - Big Day</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .galeria-header {
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at center, #ffffff 0%, var(--color-secondary) 100%);
+            text-align: center;
+            margin-top: 60px; /* Para não ficar embaixo do header */
+        }
+        
+        .galeria-header h1 {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            color: var(--color-primary);
+            font-style: italic;
+        }
+
+        .coming-soon {
+            text-align: center;
+            padding: 80px 20px;
+            min-height: 40vh;
+        }
+
+        .coming-soon h2 {
+            color: var(--color-text);
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-family: var(--font-heading);
+            font-style: italic;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background-color: var(--color-primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background 0.3s;
+            font-weight: 500;
+        }
+
+        .btn-voltar:hover {
+            background-color: #7a2639;
+        }
+    </style>
 </head>
 <body>
-    <h1>EM BREVE</h1>
-<P><a href="./index.html">voltar</a></P>
+    <header class="cabecalho scrolled" id="header">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Nossa História</a>
+            <a class="cabecalho__menu__link active" href="galeria.html">Galeria</a>
+        </nav>
+    </header>
 
+    <section class="galeria-header">
+        <h1>Nossa Galeria</h1>
+    </section>
 
+    <main class="coming-soon hidden">
+        <h2>EM BREVE...</h2>
+        <p>Ainda estamos construindo mais memórias para colocar aqui! ❤️</p>
+        <a href="./index.html" class="btn-voltar">Voltar para a História</a>
+    </main>
+
+    <footer class="rodape">
+        <p>Feito com muito ❤️ para o amor da minha vida</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,87 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big Day</title>
+    <title>Nossas Memórias - Big Day</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="cabecalho">
+    <header class="cabecalho" id="header">
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="">Nós</a>
+            <a class="cabecalho__menu__link active" href="index.html">Nossa História</a>
             <a class="cabecalho__menu__link" href="./galeria.html">Galeria</a>
         </nav>
     </header>
-    <main class="apresentacao">
-        <section class="apresentacao__corpo">
-            <h1 class="apresentacao__corpo__h1">Meu bem, este site foi criado com o intuito de preservar algumas
-                lembranças que tenho de nós. É claro, ele nunca substituirá o que realmente vivemos. Bom, me lembro que
-                alguns meses antes de começar a falar com você, eu já a observava, pensando: ‘Será? Não sei, quem sabe
-                um dia?’. Eu já te observava há algum tempo, mas nada sério. Admito que o pré-campori corroborou muito
-                para eu passar a te ver com outros olhos e criar um pequeno sentimento por você. Os meninos ficavam em
-                cima de mim questionando: ‘E aí, vai dar em alguma coisa?’, principalmente a Jessica, rsrsrs.</h1>
 
-            <img class="foto_natal" src="./img/natal.jpeg" alt="Julia e Marlon se abraçando">
+    <section class="hero hidden">
+        <div class="hero-content">
+            <h1>Marlon & Julia</h1>
+            <p class="subtitle">Cada momento ao seu lado é uma memória inesquecível</p>
+            
+            <div class="counter-container">
+                <p>Nossa história começou em 10 de Setembro de 2023</p>
+                <div id="time-counter" class="time-counter">
+                    <div class="time-box"><span id="days">0</span><small>Dias</small></div>
+                    <div class="time-box"><span id="hours">0</span><small>Horas</small></div>
+                    <div class="time-box"><span id="minutes">0</span><small>Minutos</small></div>
+                    <div class="time-box"><span id="seconds">0</span><small>Segundos</small></div>
+                </div>
+            </div>
+            
+            <a href="#historia" class="scroll-down">
+                <span>Reviver as Memórias</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <main class="timeline-container" id="historia">
+        <!-- Memory 1 -->
+        <section class="memory-card hidden">
+            <div class="memory-content">
+                <h2>Como Tudo Começou...</h2>
+                <p>Meu bem, este site foi criado com o intuito de preservar algumas lembranças que tenho de nós. É claro, ele nunca substituirá o que realmente vivemos. Bom, me lembro que alguns meses antes de começar a falar com você, eu já a observava, pensando: ‘Será? Não sei, quem sabe um dia?’. Eu já te observava há algum tempo, mas nada sério. Admito que o pré-campori corroborou muito para eu passar a te ver com outros olhos e criar um pequeno sentimento por você. Os meninos ficavam em cima de mim questionando: ‘E aí, vai dar em alguma coisa?’, principalmente a Jessica, rsrsrs.</p>
+            </div>
+            <div class="memory-image">
+                <img src="./img/natal.jpeg" alt="Julia e Marlon se abraçando no natal">
+            </div>
         </section>
 
-        <section class="apresentacao__corpo__2">
-
-            <img class="foto_dbv" src="./img/dbv.jpeg" alt="">
-
-            <h1 class="apresentacao__corpo__h1__2">Realmente, eu já estava amadurecendo a ideia em minha mente e, a
-                partir daqui, comecei a criar coragem para convidar você para sair. Voltando um pouco no tempo, eu
-                gostaria de ter começado algo já no campori, mas hoje vejo que não era o momento nem o lugar certo, e
-                ainda por cima me entreguei com aquele bendito rádio. Bom, teremos boas histórias para contar para a
-                posteridade. E hoje você sabe que toda aquela história da feirinha era uma enrolação, rsrsrs. No fim,
-                não deu certo.</h1>
-
-
+        <!-- Memory 2 -->
+        <section class="memory-card reverse hidden">
+            <div class="memory-content">
+                <h2>O Campori e a Coragem</h2>
+                <p>Realmente, eu já estava amadurecendo a ideia em minha mente e, a partir daqui, comecei a criar coragem para convidar você para sair. Voltando um pouco no tempo, eu gostaria de ter começado algo já no campori, mas hoje vejo que não era o momento nem o lugar certo, e ainda por cima me entreguei com aquele bendito rádio. Bom, teremos boas histórias para contar para a posteridade. E hoje você sabe que toda aquela história da feirinha era uma enrolação, rsrsrs. No fim, não deu certo.</p>
+            </div>
+            <div class="memory-image">
+                <img src="./img/dbv.jpeg" alt="No Acampamento">
+            </div>
         </section>
 
-        <section class="apresentacao__corpo__3">
-            <h1 class="apresentacao__corpo__h1__3">Pós-campori e eu ainda precisava criar essa tal coragem para chamar
-                você para sair. Passei uns bons dias abrindo sua conversa no WhatsApp, mas não digitava nada. Até que,
-                em um belo dia, me deu um surto de coragem e disse: ‘É hoje ou nunca’. E, por Deus, você aceitou. A
-                partir daí, minha mente foi a mil. ‘E agora?’ – pensei. Infelizmente, você ficou doente. E fique
-                tranquila, não imaginei que você estava me enrolando, mas essa situação só aumentou minha ansiedade,
-                porque eu pensava: ‘Meu Deus, como vai ser? O que falar?’. Enfim, o dia chegou.</h1>
-
-            <img class="foto_natal" src="./img/natal_2.jpeg" alt="Julia e Marlon se abraçando">
-
-
+        <!-- Memory 3 -->
+        <section class="memory-card hidden">
+            <div class="memory-content">
+                <h2>O Surto de Coragem</h2>
+                <p>Pós-campori e eu ainda precisava criar essa tal coragem para chamar você para sair. Passei uns bons dias abrindo sua conversa no WhatsApp, mas não digitava nada. Até que, em um belo dia, me deu um surto de coragem e disse: ‘É hoje ou nunca’. E, por Deus, você aceitou. A partir daí, minha mente foi a mil. ‘E agora?’ – pensei. Infelizmente, você ficou doente. E fique tranquila, não imaginei que você estava me enrolando, mas essa situação só aumentou minha ansiedade, porque eu pensava: ‘Meu Deus, como vai ser? O que falar?’. Enfim, o dia chegou.</p>
+            </div>
+            <div class="memory-image">
+                <img src="./img/natal_2.jpeg" alt="Outro momento abraçados">
+            </div>
         </section>
 
-        <section class="apresentacao__corpo__4">
-
-            <img class=" foto_natal" src="./img/dbv 3.jpeg" alt="Julia e Marlon se abraçando">
-
-            <h1 class="apresentacao__corpo__h1__4">Vou comentar sobre o pós-saída. Caramba, saí com um ‘inchaço’ no
-                coração e pensando: ‘Meu Deus, que mulher é essa’. Eu fiquei encantado com você, quase certo de que
-                tinha encontrado a pessoa que tanto procurava. Até então, eu orava para Deus que Ele me desse uma
-                namorada, mas depois desse dia eu pedia para Ele que fosse você. Pedia a Deus que meus sentimentos não
-                me ‘cegassem’, mas que Ele me orientasse.</h1>
+        <!-- Memory 4 -->
+        <section class="memory-card reverse hidden">
+            <div class="memory-content">
+                <h2>A Certeza</h2>
+                <p>Vou comentar sobre o pós-saída. Caramba, saí com um ‘inchaço’ no coração e pensando: ‘Meu Deus, que mulher é essa’. Eu fiquei encantado com você, quase certo de que tinha encontrado a pessoa que tanto procurava. Até então, eu orava para Deus que Ele me desse uma namorada, mas depois desse dia eu pedia para Ele que fosse você. Pedia a Deus que meus sentimentos não me ‘cegassem’, mas que Ele me orientasse.</p>
+            </div>
+            <div class="memory-image">
+                <img src="./img/dbv 3.jpeg" alt="Julia e Marlon">
+            </div>
         </section>
 
-        <section class="apresentacao__corpo__5">
-            <h1 class="apresentacao__corpo__h1__5 ">Essa vai sem imagem. Meu bem, quando estava perto de te pedir em
-                namoro, me lembro que em mim havia uma
-                certa incerteza causada pelo medo. Eu perguntava a Deus: ‘Pai, será que devo realmente fazer isso?’ Hoje
-                vejo que sim, meu bem, não me arrependo da escolha que fiz. Digo que sou o homem mais feliz do mundo por
-                ter a mulher que tanto procurei ao meu lado. Te amo do tamanho do universo (ouvi dizer que ele nunca
-                parou de se expandir). Minha princesa, quero que essa seja apenas uma pequena demonstração do quanto amo
-                você. Do quanto te admiro, do quanto torço por você, eu realmente sou seu fã número um. Obrigado por me
-                aceitar, obrigado por suportar minhas brincadeiras, obrigado por acalmar minha mente turbulenta,
-                obrigado por ser minha melhor amiga, obrigado por ser minha parceira, obrigado por me amar. De: Marlon
-                S. de Souza</h1>
+        <!-- Memory 5 -->
+        <section class="memory-card text-only hidden">
+            <div class="memory-content full-width">
+                <h2>O Pedido de Namoro</h2>
+                <p>Essa vai sem imagem. Meu bem, quando estava perto de te pedir em namoro, me lembro que em mim havia uma certa incerteza causada pelo medo. Eu perguntava a Deus: ‘Pai, será que devo realmente fazer isso?’ Hoje vejo que sim, meu bem, não me arrependo da escolha que fiz.</p>
+                <p>Digo que sou o homem mais feliz do mundo por ter a mulher que tanto procurei ao meu lado. Te amo do tamanho do universo (ouvi dizer que ele nunca parou de se expandir). Minha princesa, quero que essa seja apenas uma pequena demonstração do quanto amo você. Do quanto te admiro, do quanto torço por você, eu realmente sou seu fã número um.</p>
+                <p class="highlight-text">Obrigado por me aceitar, obrigado por suportar minhas brincadeiras, obrigado por acalmar minha mente turbulenta, obrigado por ser minha melhor amiga, obrigado por ser minha parceira, obrigado por me amar.</p>
+                <p class="signature">Com amor,<br>Marlon S. de Souza</p>
+            </div>
         </section>
 
     </main>
-    <footer class="rodape">
-        <p>Desenvolvido pelo Amor da sua Vida</p>
-    </footer>
-</body>
 
+    <footer class="rodape">
+        <p>Feito com muito ❤️ para o amor da minha vida</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
